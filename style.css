@@ -1,0 +1,82 @@
+html, body {
+    font-family:Tahoma;
+    background-color: #f560c8;
+    color: #0f0f0f;
+}
+
+.item:hover {
+    animation-play-state: paused;
+}
+
+.animationFadeInFadeOut {
+    animation: fadeInFadeOut 2s linear infinite;
+}
+
+
+@keyframes fadeInFadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+
+.animationContent::after {
+    content: "";
+    animation: promocao 3s linear infinite;
+}
+
+
+@keyframes promocao {
+    0% {
+        content: "Se toque";
+    }
+
+    50% {
+        content: "";
+    }
+
+    60% {
+        content: "Se AME!";
+    }
+}
+
+div {
+    font-weight: bold;
+    display: flex;
+}
+figure {
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.red {
+    font-size: 50px;
+    text-align: center;
+    margin: 0%;
+}
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 0%;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
